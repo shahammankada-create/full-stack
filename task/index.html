@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Task Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Simple Task Manager</h1>
+
+  <!-- Task Form -->
+  <div class="task-form">
+    <input type="text" id="title" placeholder="Task Title" />
+    <textarea id="description" placeholder="Task Description"></textarea>
+
+    <select id="priority">
+      <option value="low">Low Priority</option>
+      <option value="medium">Medium Priority</option>
+      <option value="high">High Priority</option>
+    </select>
+
+    <button id="addTask">Add Task</button>
+  </div>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <div class="tab active" data-status="Pending">Pending</div>
+    <div class="tab" data-status="In-Progress">In-Progress</div>
+    <div class="tab" data-status="Completed">Completed</div>
+  </div>
+
+  <!-- Task List -->
+  <div class="task-list" id="taskList"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
